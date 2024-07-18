@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var habits = Habits()
+    @State private var habits = Habits()
     @State private var showAddActivity: Bool = false
     var body: some View {
         NavigationStack {

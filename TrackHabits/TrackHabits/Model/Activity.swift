@@ -15,6 +15,10 @@ struct Activity: Identifiable, Codable {
 }
 
 @Observable
-class Habits: ObservableObject {
+class Habits {
     var activities: [Activity] = []
+    
+    init() {
+        self.activities = activities
+    }
 }
