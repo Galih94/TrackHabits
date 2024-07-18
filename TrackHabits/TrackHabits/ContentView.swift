@@ -26,7 +26,7 @@ struct ContentView: View {
                 }
             })
             .sheet(isPresented: $showAddActivity, content: {
-                Text("New Activity")
+                NewActivityView(habits: habits)
             })
         }
     }
