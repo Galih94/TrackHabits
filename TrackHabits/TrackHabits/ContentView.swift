@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var habits = Habits()
+    @StateObject private var habits = Habits()
     @State private var showAddActivity: Bool = false
     var body: some View {
         NavigationStack {
             List {
                 Section {
-                    ForEach(habits.activities) { activity in
-                        Text("\(activity.title)")
+                    ForEach($habits.activities) { $activity in
+                        NavigationLink {
+                            ActivityDetailView(activity: $activity)
+                        } label: {
+                            Text(activity.title)
+                        }
                     }
                 }
             }

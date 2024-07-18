@@ -9,12 +9,12 @@ import Foundation
 
 struct Activity: Identifiable, Codable {
     var id = UUID()
-    let title: String
-    let desc: String
-    let completionCount: Int
+    var title: String
+    var desc: String
+    var completionCount: Int
 }
 
 @Observable
-class Habits {
+class Habits: ObservableObject {
     var activities: [Activity] = []
 }

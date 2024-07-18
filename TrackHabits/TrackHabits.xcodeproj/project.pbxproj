@@ -13,6 +13,7 @@
 		2AE655E62C48F71700E3F26B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AE655E52C48F71700E3F26B /* Preview Assets.xcassets */; };
 		2AE655EE2C48F8CB00E3F26B /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE655ED2C48F8CB00E3F26B /* Activity.swift */; };
 		2AE655F12C49007F00E3F26B /* NewActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE655F02C49007F00E3F26B /* NewActivityView.swift */; };
+		2AE655F32C49069600E3F26B /* ActivityDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE655F22C49069600E3F26B /* ActivityDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		2AE655E52C48F71700E3F26B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2AE655ED2C48F8CB00E3F26B /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		2AE655F02C49007F00E3F26B /* NewActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewActivityView.swift; sourceTree = "<group>"; };
+		2AE655F22C49069600E3F26B /* ActivityDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				2AE655F02C49007F00E3F26B /* NewActivityView.swift */,
+				2AE655F22C49069600E3F26B /* ActivityDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				2AE655EE2C48F8CB00E3F26B /* Activity.swift in Sources */,
 				2AE655E12C48F71500E3F26B /* ContentView.swift in Sources */,
 				2AE655F12C49007F00E3F26B /* NewActivityView.swift in Sources */,
+				2AE655F32C49069600E3F26B /* ActivityDetailView.swift in Sources */,
 				2AE655DF2C48F71500E3F26B /* TrackHabitsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
