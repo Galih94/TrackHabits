@@ -15,6 +15,7 @@ struct Activity: Identifiable, Codable {
 }
 
 let key = "key"
+// change 1
 
 @Observable
 class Habits {
