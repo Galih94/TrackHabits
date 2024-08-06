@@ -14,27 +14,11 @@ struct Activity: Identifiable, Codable {
     var completionCount: Int
 }
 
-let key = "key"
-// change 1
-// change 2
-// change 3
-
 @Observable
 class Habits {
-    var activities: [Activity] = [] {
-        didSet {
-            if let data = try? JSONEncoder().encode(activities) {
-                UserDefaults.standard.setValue(data, forKey: key)
-            }
-        }
-    }
+    var activities: [Activity] = []
     
     init() {
-        if let savedActivities = UserDefaults.standard.data(forKey: key),
-           let decoded = try? JSONDecoder().decode([Activity].self, from: savedActivities) {
-            self.activities = decoded
-            return
-        }
-        self.activities = []
+        self.activities = activities
     }
 }
